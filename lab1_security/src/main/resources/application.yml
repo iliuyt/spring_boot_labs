@@ -1,0 +1,9 @@
+server:
+  port: 8081
+#  通过配置文件设置账号密码
+#spring:
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+#      roles: admin

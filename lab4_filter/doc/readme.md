@@ -1,0 +1,9 @@
+1、过滤器设置@Component时，过滤器就生效了
+2、过滤器设置@Component、@WebFilter、@Order时候，order排序有效
+3、Order排序值越低优先级越高
+4、没有设置Order的优先级低于设置Order的过滤器
+5、没有设置Order的过滤器将按照类名排序
+6、可以通过 FilterRegistrationBean 设置过滤器和设置Order优先级
+7、FilterRegistrationBean设置过滤器与@Component注解设置过滤器效果一样，两者可以同时存在，通过order进行排序
+8、通过ServletComponentScan扫描的过滤器，order排序无效
+9、第三方过滤器无法通过注解和扫描获取，可以通过FilterRegistrationBean设置
